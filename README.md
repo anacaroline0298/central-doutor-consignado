@@ -33,3 +33,6 @@ JavaScript verificado com node --check. Referências locais e estrutura HTML con
 Os botões Cotar meu seguro e Fazer autocotação abrem em nova aba o link fornecido pela proprietária:
 https://sistema.cronosmulticalculo.com.br/link/trustfy-corretora-de-seguros-ltda/HSDCMZfS92
 O sistema é externo e identificado como Trustfy Corretora de Seguros. Não há API, captura dos dados externos ou garantia de disponibilidade/resultados. O formulário de WhatsApp continua como alternativa de atendimento.
+
+## Visual v2
+Banner fotográfico de largura total (imagem gerada por IA, ilustrativa), navegação institucional, atalhos de produto, benefícios com ícones e cartões editoriais. Mantenha hero-auto.jpg na mesma pasta dos arquivos. Os links de autocotação e WhatsApp foram preservados.
