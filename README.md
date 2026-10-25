@@ -36,3 +36,6 @@ O sistema é externo e identificado como Trustfy Corretora de Seguros. Não há 
 
 ## Visual v2
 Banner fotográfico de largura total (imagem gerada por IA, ilustrativa), navegação institucional, atalhos de produto, benefícios com ícones e cartões editoriais. Mantenha hero-auto.jpg na mesma pasta dos arquivos. Os links de autocotação e WhatsApp foram preservados.
+
+## Versão 3
+Logo original fornecido pela proprietária, exibido sem alterar o desenho. Seção de soluções com duas faixas fotográficas. Open Sans local é a família de apoio encontrada na referência; a fonte de títulos Porto Roobert é proprietária e não foi redistribuída. Títulos aproximados com Open Sans em peso regular e espaçamento ajustado.
