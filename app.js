@@ -23,7 +23,7 @@ form.addEventListener('submit', e => {
  window.location.assign(url(message));
 });
 const dialog = document.querySelector('#privacy');
-['privacy-open','privacy-footer'].forEach(id => document.getElementById(id).addEventListener('click', () => dialog.showModal()));
+document.getElementById('privacy-open').addEventListener('click', () => dialog.showModal());
 document.querySelector('#privacy-close').addEventListener('click', () => dialog.close());
 document.querySelector('#year').textContent = new Date().getFullYear();
 syncProduct();

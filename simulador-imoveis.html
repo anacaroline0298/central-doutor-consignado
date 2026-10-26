@@ -32,7 +32,7 @@
  summary{min-height:48px;font-size:14px}
  .conditions p,.conditions li{font-size:13px}
 }
-</style></head><body><main>
+</style><link rel="stylesheet" href="privacidade.css"><script defer src="privacidade.js"></script></head><body><main>
 <header class="hero"><div><p class="eyebrow">Doutor Consignado · Consórcios e Seguros</p><h1>Um imóvel hoje nos planos. <br> Um legado para amanhã.</h1><p>Explore sua carta de crédito e veja como o planejamento pode acompanhar o futuro da sua família.</p><span class="pill">Consórcio imobiliário · Prazo de 200 meses</span></div>
 <svg viewBox="0 0 420 300" role="img" aria-label="Ilustração de uma casa e uma árvore, representando patrimônio e futuro"><circle cx="220" cy="150" r="136" fill="#ffffff12"/><circle cx="325" cy="62" r="28" fill="#ffd6a3"/><path d="M30 257Q200 225 395 256" fill="none" stroke="#ffb982" stroke-width="4"/><path d="M68 145L194 50 315 145" fill="#fff2df"/><path d="M89 143V253H294V143L194 66Z" fill="#fff9f1"/><path d="M194 66L294 143V253H194Z" fill="#ffd4ab"/><rect x="163" y="172" width="44" height="81" rx="6" fill="#b43c0b"/><rect x="111" y="151" width="35" height="38" rx="5" fill="#ed762f"/><rect x="231" y="151" width="35" height="38" rx="5" fill="#ed762f"/><path d="M339 251V155" stroke="#853515" stroke-width="9" stroke-linecap="round"/><circle cx="340" cy="142" r="40" fill="#e9b775"/><circle cx="320" cy="166" r="27" fill="#ffd9a1"/><path d="M176 271h-63m139 0h-53" stroke="#ffc18b" stroke-width="4" stroke-linecap="round"/></svg></header>
 <nav class="tabs" aria-label="Seções"><a href="#simulacao">Simular meu imóvel ↗</a><a href="#futuro">Planejar para meu filho ↗</a><a href="#condicoes">Entender as condições</a></nav>
@@ -86,4 +86,4 @@ $('plan').value='m';$('plan').addEventListener('change',fillCredits);$('credit')
 // Integração opcional: o pai deve validar origem e event.source antes de aceitar a altura.
 let lastHeight=0;function reportHeight(){const height=Math.ceil(document.querySelector('main').getBoundingClientRect().height);if(height!==lastHeight){lastHeight=height;if(window.parent!==window)window.parent.postMessage({type:'doutor-imoveis-height',height},'*')}}
 if('ResizeObserver' in window)new ResizeObserver(reportHeight).observe(document.body);window.addEventListener('load',reportHeight);window.addEventListener('resize',reportHeight);window.addEventListener('message',event=>{if(event.source===window.parent&&event.data?.type==='doutor-imoveis-request-height'){lastHeight=0;reportHeight();}});
-</script></body></html>
+</script><footer class="privacy-tools"><a href="privacidade.html" target="_top">Política de Privacidade</a><button type="button" data-cookie-settings>Configurações de Cookies</button></footer></body></html>
