@@ -39,3 +39,6 @@ Banner fotográfico de largura total (imagem gerada por IA, ilustrativa), navega
 
 ## Versão 3
 Logo original fornecido pela proprietária, exibido sem alterar o desenho. Seção de soluções com duas faixas fotográficas. Open Sans local é a família de apoio encontrada na referência; a fonte de títulos Porto Roobert é proprietária e não foi redistribuída. Títulos aproximados com Open Sans em peso regular e espaçamento ajustado.
+
+## Versão 4
+Abas de seguro auto, vida e residencial com navegação por teclado; vida/residencial encaminham ao WhatsApp (não há link de autocotação fornecido para esses produtos). Marca em Nunito, seção laranja, botões com feedback e rodapé Quem somos/Propósito. Revisar descrição institucional antes de divulgar.
