@@ -45,3 +45,9 @@ header nav{align-items:center;flex-wrap:wrap}
 header nav .nav-simulator{padding:11px 15px;font-size:13px;white-space:nowrap;color:white}
 header nav .nav-simulator:after{display:none}
 .story-plan .text-link{font-size:12px;margin:16px 0 0}
+
+/* A separate entry for property planning, alongside the existing auto solutions. */
+.story-property{background:#fff0e5}
+.property-illustration{display:grid;place-items:center;min-width:0;padding:24px;background:linear-gradient(120deg,#b53b06,#ff8b35)}
+.property-illustration svg{display:block;width:100%;height:auto;max-height:330px}
+@media(max-width:850px){.property-illustration{order:-1;padding:16px}.property-illustration svg{max-height:220px}}

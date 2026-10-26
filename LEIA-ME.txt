@@ -1,3 +1,19 @@
+PRÉVIA COMPLETA — AUTOMÓVEIS E IMÓVEIS
+
+Extraia todo o ZIP para uma pasta antes de abrir index.html.
+No menu, clique em “Consórcio de imóveis”, ou use “Simular imóvel” na seção de soluções.
+O novo simulador abre dentro da página; “Abrir simulador de imóveis completo” abre uma aba separada.
+Também pode abrir simulador-imoveis.html diretamente, sem instalar dependências.
+Para automóveis, o botão “Simular consórcio” continua disponível.
+WhatsApp e autocotação precisam de Internet. Nada é enviado pelo simulador sem sua ação no serviço externo.
+
+As quatro tabelas e a fórmula original do planejamento familiar foram preservadas.
+O rendimento é hipotético, somente após a contemplação, limitado a 200 meses.
+Não há promessa de renda, patrimônio líquido ou saque/liberação automática aos 18 anos.
+Consulte as condições e os avisos completos no simulador.
+
+HISTÓRICO DA ATUALIZAÇÃO VISUAL DE AUTOMÓVEIS
+
 ATUALIZAÇÃO VISUAL DO SIMULADOR
 
 Envie simulador.css e simulador-veiculos.jpg para a mesma pasta do GitHub em que está simulador-consorcio.html, substituindo o CSS anterior.

@@ -49,20 +49,24 @@ insuranceTabs.forEach((tab,index) => {
  });
 });
 
-// Resize through messaging so the downloaded site also works with file://.
-const simulatorFrame = document.querySelector('iframe[src="simulador-consorcio.html"]');
-if (simulatorFrame) {
+// Resize each simulator independently, including downloaded file:// pages.
+const simulators = [
+ { src: 'simulador-consorcio.html', type: 'consorcio:resize', request: 'consorcio:request-size' },
+ { src: 'simulador-imoveis.html', type: 'doutor-imoveis-height', request: 'doutor-imoveis-request-height' }
+];
+for (const simulator of simulators) {
+ const frame = document.querySelector(`iframe[src="${simulator.src}"]`);
+ if (!frame) continue;
  window.addEventListener('message', event => {
-  if (event.source !== simulatorFrame.contentWindow) return;
+  if (event.source !== frame.contentWindow) return;
   const expectedOrigin = location.protocol === 'file:' ? 'null' : location.origin;
-  if (event.origin !== expectedOrigin) return;
-  if (event.data?.type !== 'consorcio:resize') return;
+  if (event.origin !== expectedOrigin || event.data?.type !== simulator.type) return;
   const height = event.data.height;
   if (typeof height === 'number' && Number.isFinite(height) && height > 0) {
-   simulatorFrame.style.height = Math.ceil(height) + 'px';
+   frame.style.height = Math.ceil(height) + 'px';
   }
  });
- simulatorFrame.addEventListener('load', () => {
-  simulatorFrame.contentWindow.postMessage({ type: 'consorcio:request-size' }, '*');
+ frame.addEventListener('load', () => {
+  frame.contentWindow.postMessage({ type: simulator.request }, '*');
  });
 }
