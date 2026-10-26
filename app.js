@@ -70,3 +70,34 @@ for (const simulator of simulators) {
   frame.contentWindow.postMessage({ type: simulator.request }, '*');
  });
 }
+
+// Mobile navigation stays a normal list of links when JavaScript is unavailable.
+const menuToggle = document.querySelector('.menu-toggle');
+const siteMenu = document.getElementById('site-menu');
+const mobileNavigation = window.matchMedia('(max-width: 850px)');
+function closeNavigation(returnFocus = false) {
+ menuToggle.setAttribute('aria-expanded', 'false');
+ menuToggle.setAttribute('aria-label', 'Abrir menu principal');
+ siteMenu.hidden = mobileNavigation.matches;
+ if (returnFocus) menuToggle.focus({ preventScroll: true });
+}
+menuToggle.addEventListener('click', () => {
+ const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+ menuToggle.setAttribute('aria-expanded', String(open));
+ menuToggle.setAttribute('aria-label', open ? 'Fechar menu principal' : 'Abrir menu principal');
+ siteMenu.hidden = !open;
+});
+siteMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+ if (!mobileNavigation.matches) return;
+ closeNavigation();
+ const target = document.getElementById(link.hash.slice(1));
+ if (target) { target.tabIndex = -1; target.focus({ preventScroll: true }); }
+}));
+document.addEventListener('keydown', event => {
+ if (event.key === 'Escape' && mobileNavigation.matches && menuToggle.getAttribute('aria-expanded') === 'true') closeNavigation(true);
+});
+document.addEventListener('click', event => {
+ if (mobileNavigation.matches && !menuToggle.closest('header').contains(event.target)) closeNavigation();
+});
+mobileNavigation.addEventListener('change', () => closeNavigation());
+closeNavigation();

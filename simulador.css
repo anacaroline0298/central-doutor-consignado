@@ -22,3 +22,28 @@ main:before{content:none}
 .sim-hero{position:relative;isolation:auto}
 .sim-hero:before{content:'';position:absolute;z-index:-1;inset:-52px calc((100% - 100vw)/2) -105px;background:linear-gradient(110deg,#a93100 0%,#d94300 43%,#ff6b13 100%)}
 @media(max-width:760px){.sim-hero:before{top:-28px;bottom:-130px}}
+
+/* Mobile forms remain full-size inside an already narrow iframe. */
+@media(max-width:850px){
+ main{padding:24px 16px 32px}
+ .sim-hero{grid-template-columns:1fr;gap:20px}
+ .sim-hero:before{top:-24px;bottom:-130px}
+ .sim-hero h1{font-size:clamp(28px,6vw,36px);letter-spacing:-.8px}
+ .sim-hero .eyebrow{font-size:10px}
+ .sim-hero .intro{font-size:14px}
+ .sim-hero-image figcaption{font-size:11px}
+ .sim-grid{grid-template-columns:1fr;gap:20px}
+ form,.result{padding:24px 18px;min-width:0}
+ select{font-size:16px;min-height:48px;padding:12px 10px}
+ .radio{min-height:48px;font-size:14px;line-height:1.5}
+ .helper{font-size:12px}
+ .result h2{font-size:clamp(25px,6vw,34px)}
+ .installment{font-size:clamp(26px,7vw,40px);letter-spacing:-1px;overflow-wrap:anywhere}
+ .button{min-height:50px;font-size:14px;white-space:normal}
+ .conditions{padding:24px 18px}
+ dl{grid-template-columns:1fr}
+ dt{font-size:12px}
+ .conditions>p{font-size:13px}
+ summary{min-height:48px;padding:14px;font-size:14px}
+ th,td{padding:12px;white-space:nowrap}
+}
