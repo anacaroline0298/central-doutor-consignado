@@ -35,7 +35,7 @@ jobs:
             simulador-imoveis.html privacidade.html privacidade.css privacidade.js \
             nunito.ttf open-sans-400.woff2 open-sans-700.woff2 \
             logo-doutor.jpeg hero-auto.jpg consorcio-vida.jpg \
-            simulador-veiculos.jpg sobre-nos-familia.jpg _site/
+            simulador-veiculos.jpg sobre-nos-familia.jpg imovel-consorcio.jpg _site/
           touch _site/.nojekyll
       - name: Enviar arquivos da publicação
         uses: actions/upload-pages-artifact@v3
