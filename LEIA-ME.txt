@@ -1,0 +1,10 @@
+ATUALIZAÇÃO VISUAL DO SIMULADOR
+
+Envie simulador.css e simulador-veiculos.jpg para a mesma pasta do GitHub em que está simulador-consorcio.html, substituindo o CSS anterior.
+Não substitua os demais arquivos do projeto. Assim, as correções recentes de integração e altura do simulador são preservadas.
+O arquivo nunito.ttf, já presente no projeto, é utilizado quando disponível; há fontes alternativas.
+
+Carro e moto são imagens ilustrativas. As simulações continuam sendo de automóveis, conforme as tabelas existentes. Nenhum preço, regra ou cálculo foi alterado.
+
+COMANDO PARA O CODEX
+Atualize o visual do simulador com os dois arquivos anexos: substitua simulador.css e adicione simulador-veiculos.jpg na mesma pasta de simulador-consorcio.html. Preserve as tabelas, os cálculos, os links e as correções existentes de altura e integração do iframe. Verifique a exibição no celular e no computador e se todos os controles continuam funcionando. Não publique o site ainda.
