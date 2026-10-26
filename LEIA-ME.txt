@@ -1,26 +1,20 @@
-PRÉVIA COMPLETA — AUTOMÓVEIS E IMÓVEIS
+SOBRE NÓS — ATUALIZAÇÃO DOUTOR CONSIGNADO
 
-Extraia todo o ZIP para uma pasta antes de abrir index.html.
-No menu, clique em “Consórcio de imóveis”, ou use “Simular imóvel” na seção de soluções.
-O novo simulador abre dentro da página; “Abrir simulador de imóveis completo” abre uma aba separada.
-Também pode abrir simulador-imoveis.html diretamente, sem instalar dependências.
-Para automóveis, o botão “Simular consórcio” continua disponível.
-WhatsApp e autocotação precisam de Internet. Nada é enviado pelo simulador sem sua ação no serviço externo.
-
-As quatro tabelas e a fórmula original do planejamento familiar foram preservadas.
-O rendimento é hipotético, somente após a contemplação, limitado a 200 meses.
-Não há promessa de renda, patrimônio líquido ou saque/liberação automática aos 18 anos.
-Consulte as condições e os avisos completos no simulador.
-
-HISTÓRICO DA ATUALIZAÇÃO VISUAL DE AUTOMÓVEIS
-
-ATUALIZAÇÃO VISUAL DO SIMULADOR
-
-Envie simulador.css e simulador-veiculos.jpg para a mesma pasta do GitHub em que está simulador-consorcio.html, substituindo o CSS anterior.
-Não substitua os demais arquivos do projeto. Assim, as correções recentes de integração e altura do simulador são preservadas.
-O arquivo nunito.ttf, já presente no projeto, é utilizado quando disponível; há fontes alternativas.
-
-Carro e moto são imagens ilustrativas. As simulações continuam sendo de automóveis, conforme as tabelas existentes. Nenhum preço, regra ou cálculo foi alterado.
+ENVIE AO GITHUB, NA MESMA PASTA DO INDEX.HTML:
+- sobre-nos.css
+- sobre-nos-secao.html
+- sobre-nos-familia.jpg
+O arquivo sobre-nos-preview.html serve apenas para conferir o conjunto: abra-o com os outros arquivos na mesma pasta. Não é preciso enviá-lo ao GitHub.
 
 COMANDO PARA O CODEX
-Atualize o visual do simulador com os dois arquivos anexos: substitua simulador.css e adicione simulador-veiculos.jpg na mesma pasta de simulador-consorcio.html. Preserve as tabelas, os cálculos, os links e as correções existentes de altura e integração do iframe. Verifique a exibição no celular e no computador e se todos os controles continuam funcionando. Não publique o site ainda.
+Use a versão mais recente do projeto. Enviei sobre-nos.css, sobre-nos-secao.html e sobre-nos-familia.jpg. Substitua a seção antiga Quem somos pelo bloco de sobre-nos-secao.html, integrado diretamente no index.html, dentro do main e antes do rodapé, sem iframe. Inclua <link rel="stylesheet" href="sobre-nos.css"> após os estilos existentes. Preserve o ID quem-somos e atualize os links do menu se necessário. Não deixe duas seções com o mesmo ID. Mantenha o rodapé com logo, contato, privacidade e informações legais, removendo somente o texto duplicado da antiga seção sobre nós. Preserve todas as outras atualizações e os dois simuladores.
+Confira conflitos dos estilos globais com os componentes: a nova seção usa classes dc-about e descendentes. Garanta que imagem e texto fiquem lado a lado no computador e empilhados no celular, sem cortes nos rostos. Confira a aparência, a navegação e o WhatsApp 0800 878 7026. A fotografia é ilustrativa; não a apresente como equipe real nem depoimento de cliente. Não publique ainda. Mostre a página principal atualizada no mesmo link único de prévia do projeto.
+
+INTEGRAÇÃO MANUAL
+1. Coloque os três arquivos na pasta da página principal.
+2. Inclua sobre-nos.css no head após os estilos do site.
+3. Substitua a seção Quem somos pelo conteúdo de sobre-nos-secao.html.
+4. O fragmento precisa ser integrado pelo Codex: só enviar os arquivos não altera index.html automaticamente.
+
+A fonte Nunito usa nunito.ttf existente no projeto; há fontes alternativas. Não há dependências JavaScript ou instalação.
+A nova foto foi criada com geração de imagem e é identificada no layout como ilustrativa. O texto é próprio, inspirado na estrutura da referência, sem reproduzir alegações da Porto sobre história, porte ou experiência.
