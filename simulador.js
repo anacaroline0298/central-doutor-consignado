@@ -19,7 +19,7 @@ function render(){
  const expired=today>'2026-10-31';
  const link=document.getElementById('sim-whatsapp');
  if(expired){document.getElementById('validity').textContent='Tabela vencida em 31/10/2026. Valores históricos: solicite condições atualizadas antes de prosseguir.';link.textContent='Pedir tabela atualizada no WhatsApp ↗';}
- const message=expired?'Olá! Vi o simulador com tabela vencida em 31/10/2026 e gostaria das condições atualizadas para consórcio auto. Crédito de interesse: '+money(r.credit)+'.':'Olá! Consultei a tabela de consórcio auto válida até 31/10/2026. Crédito: '+money(r.credit)+'. Prazo informado: '+t.months+' meses. Parcela '+(reduced?'reduzida até contemplação':'integral')+': '+money(value)+'. Quero confirmar disponibilidade e condições.';
+ const message=expired?'Olá! Vi o simulador com tabela vencida em 31/10/2026 e gostaria das condições atualizadas para consórcio auto. Crédito de interesse: '+money(r.credit)+'.':'Olá! Consultei a tabela de consórcio auto válida até 31/10/2026. Crédito: '+money(r.credit)+'. Prazo informado: '+t.months+' meses. Parcela '+(reduced?'reduzida até a contemplação':'integral')+': '+money(value)+'. Quero confirmar disponibilidade e condições.';
  link.href='https://wa.me/'+(window.SITE_CONFIG?.whatsapp||'5508008787026')+'?text='+encodeURIComponent(message);
 }
 term.addEventListener('change',updateCredits);credit.addEventListener('change',render);document.querySelectorAll('[name=mode]').forEach(r=>r.addEventListener('change',render));updateCredits();

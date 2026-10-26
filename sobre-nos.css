@@ -7,3 +7,5 @@
 .dc-about__media figcaption{max-width:calc(100% - 28px)}
 @media(max-width:850px){.dc-about__copy{padding:32px 20px}.dc-about__body{padding:36px 20px}.dc-about__cta{min-height:48px;font-size:14px}.dc-about__story p{font-size:16px}}
 @media(max-width:850px){.dc-about__hero,.dc-about__story,.dc-about__values{grid-template-columns:1fr}.dc-about__media{width:100%;min-height:0;aspect-ratio:3/2}.dc-about__purpose{flex-direction:column;align-items:stretch}}
+
+.dc-about__story h3,.dc-about__purpose h3{line-height:1.25}
