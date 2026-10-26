@@ -23,3 +23,16 @@ function render(){
  link.href='https://wa.me/'+(window.SITE_CONFIG?.whatsapp||'5508008787026')+'?text='+encodeURIComponent(message);
 }
 term.addEventListener('change',updateCredits);credit.addEventListener('change',render);document.querySelectorAll('[name=mode]').forEach(r=>r.addEventListener('change',render));updateCredits();
+
+// Report content height without requiring same-origin DOM access by the parent.
+if (window.parent !== window) {
+ const reportHeight = () => window.parent.postMessage({
+  type: 'consorcio:resize',
+  height: document.querySelector('main').getBoundingClientRect().height
+ }, '*');
+ new ResizeObserver(reportHeight).observe(document.querySelector('main'));
+ window.addEventListener('message', event => {
+  if (event.source === window.parent && event.data?.type === 'consorcio:request-size') reportHeight();
+ });
+ reportHeight();
+}

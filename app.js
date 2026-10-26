@@ -48,3 +48,21 @@ insuranceTabs.forEach((tab,index) => {
   if(next !== undefined){e.preventDefault();chooseInsurance(insuranceTabs[next]);insuranceTabs[next].focus();}
  });
 });
+
+// Resize through messaging so the downloaded site also works with file://.
+const simulatorFrame = document.querySelector('iframe[src="simulador-consorcio.html"]');
+if (simulatorFrame) {
+ window.addEventListener('message', event => {
+  if (event.source !== simulatorFrame.contentWindow) return;
+  const expectedOrigin = location.protocol === 'file:' ? 'null' : location.origin;
+  if (event.origin !== expectedOrigin) return;
+  if (event.data?.type !== 'consorcio:resize') return;
+  const height = event.data.height;
+  if (typeof height === 'number' && Number.isFinite(height) && height > 0) {
+   simulatorFrame.style.height = Math.ceil(height) + 'px';
+  }
+ });
+ simulatorFrame.addEventListener('load', () => {
+  simulatorFrame.contentWindow.postMessage({ type: 'consorcio:request-size' }, '*');
+ });
+}

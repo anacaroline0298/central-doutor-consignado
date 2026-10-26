@@ -14,3 +14,34 @@ body{font-family:'Open Sans Local','Segoe UI',sans-serif}h1,h2,h3,nav{font-famil
 .brand,header .brand{font-family:Nunito,'Segoe UI',sans-serif;font-size:20px;letter-spacing:-.6px;font-weight:800;line-height:1.1}.brand small{font-family:Nunito,'Segoe UI',sans-serif;font-size:12px;font-weight:600;letter-spacing:.4px;margin-top:6px;text-transform:none}header{gap:18px;padding-left:4%;padding-right:4%;max-width:1500px}nav{gap:24px;font-size:13px}nav a{position:relative}nav a:after{content:'';position:absolute;left:0;bottom:-9px;width:0;height:3px;background:#f4762b;transition:width .2s}nav a:hover:after{width:100%}.button{border-radius:12px!important;transition:background .2s,transform .2s,box-shadow .2s!important}.button:hover{transform:translateY(-3px);box-shadow:0 8px 20px #14232925}.button:active{transform:translateY(0);box-shadow:none}.insurance-hub{max-width:1220px}.insurance-hub .section-head>p:last-child{color:#64747b;max-width:650px}.insurance-tabs{display:flex;gap:12px;border-bottom:1px solid #e0e6e8;padding-bottom:18px;flex-wrap:wrap}.insurance-tabs button{cursor:pointer;padding:13px 24px;border:1px solid #dce2e4;border-radius:50px;background:white;color:#263d45;font-weight:700;font-size:14px;transition:background .2s,transform .2s}.insurance-tabs button:hover{background:#fff0e5;transform:translateY(-2px)}.insurance-tabs button[aria-selected=true]{background:#b7470d;border-color:#b7470d;color:white}.insurance-panel{display:grid;grid-template-columns:170px 1fr;gap:36px;align-items:center;padding:40px;background:#fff5ed;border-radius:18px;margin-top:24px}.insurance-panel h3{font-family:Nunito,sans-serif;font-size:31px;font-weight:700;margin:0 0 14px;line-height:1.2}.insurance-panel p{max-width:700px;color:#536a74;font-size:15px}.insurance-panel small{display:block;font-size:11px;color:#62747b;margin-top:16px}.insurance-symbol{display:grid;place-items:center;width:145px;height:145px;border-radius:50%;background:#ffddc3;color:#ad420c;font-size:70px}.orange-band{background:#ff782c;padding:58px max(6%,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:30px;color:#172c34}.orange-band h2{font-family:Nunito,sans-serif;font-size:42px;font-weight:700;letter-spacing:-1px;margin-bottom:16px}.orange-band .eyebrow{color:#4c260e}.orange-band .button{background:#182f37;color:white;white-space:nowrap}.orange-band p{margin-bottom:0}.orange-band .eyebrow{margin-bottom:18px}textarea{display:block;width:100%;padding:12px;border:1px solid #cbd0d2;border-radius:8px;font:inherit;resize:vertical;margin:8px 0 18px}.choices{flex-wrap:wrap;gap:12px 18px}footer{flex-wrap:wrap;max-width:none;padding:58px max(5%,calc((100% - 1160px)/2)) 90px}.about-footer{flex:0 0 100%;display:grid;grid-template-columns:1.1fr 1fr;gap:80px;border-bottom:1px solid #d8e0e2;padding-bottom:40px;margin-bottom:15px;scroll-margin-top:20px}.about-footer h2{font-family:Nunito,sans-serif;font-size:31px;letter-spacing:-.6px;font-weight:700}.about-footer h3{font-family:Nunito,sans-serif;font-size:27px;letter-spacing:-.5px;margin:0 0 20px}.about-footer p:not(.eyebrow){font-size:14px;color:#566e78;line-height:1.8}.about-footer .text-link{font-size:13px}footer .brand{font-family:Nunito,sans-serif;font-size:17px}footer .brand small{font-size:11px}
 @media(max-width:1000px){nav{gap:14px;font-size:12px}header .brand{font-size:17px}}@media(max-width:850px){header .brand{font-size:16px}header .brand small{font-size:10px}.insurance-tabs{gap:8px}.insurance-tabs button{font-size:12px;padding:11px 16px}.insurance-panel{grid-template-columns:1fr;padding:25px;gap:20px}.insurance-symbol{height:80px;width:80px;font-size:42px}.insurance-panel h3{font-size:27px}.orange-band{flex-direction:column;align-items:flex-start;padding:40px 24px}.orange-band h2{font-size:34px}.about-footer{grid-template-columns:1fr;gap:28px}footer{padding:40px 24px 90px}.about-footer h2{font-size:28px}}
 @media(prefers-reduced-motion:reduce){.button,.insurance-tabs button,nav a:after{transition:none!important}.button:hover,.insurance-tabs button:hover{transform:none}}
+
+
+
+/* Responsive v3 corrections: preserve the complete original logo. */
+header{height:auto;min-height:94px;padding-top:14px;padding-bottom:14px}
+.logo-original,footer .logo-original{width:76px;height:66px;overflow:visible}
+.logo-original img,footer .logo-original img{position:static;display:block;width:100%;height:100%;max-width:100%;object-fit:contain}
+.floating{z-index:10}
+.story-copy,.story-photo{min-width:0}
+.story .button{max-width:100%;text-align:center;white-space:normal}
+@media(max-width:850px){
+ header{flex-wrap:wrap;gap:12px;padding:14px 18px}
+ header nav{display:flex;order:3;flex-basis:100%;justify-content:center;flex-wrap:wrap;gap:12px 28px;font-size:14px}
+ header .brand{font-size:10px;gap:6px}
+ header .brand small{font-size:8px;letter-spacing:1px}
+ .logo-original,footer .logo-original{width:60px;height:54px}
+ header>.button{font-size:11px;padding:10px;max-width:112px}
+ .hero h1{font-size:clamp(32px,8vw,40px)}
+ .hero-inner{padding-left:22px;padding-right:22px}
+ .quote>div>.button{max-width:100%;text-align:center}
+ .choices{flex-wrap:wrap;gap:10px 20px}
+}
+@media(max-width:850px){header .brand{font-size:16px}header .brand small{font-size:10px}}
+/* On small screens, keep the contact action from covering text and controls. */
+@media(max-width:850px){.floating{position:static;display:flex;width:max-content;max-width:calc(100% - 28px);margin:0 14px 20px auto}}
+
+/* Make the simulator easy to find from the main navigation. */
+header nav{align-items:center;flex-wrap:wrap}
+header nav .nav-simulator{padding:11px 15px;font-size:13px;white-space:nowrap;color:white}
+header nav .nav-simulator:after{display:none}
+.story-plan .text-link{font-size:12px;margin:16px 0 0}
