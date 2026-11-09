@@ -1,25 +1,33 @@
-# Simulador por consulta às tabelas Porto fornecidas
+# Simuladores — tabelas de novembro de 2026
 
-36 combinações de prazo/crédito (5 + 7 + 13 + 11 = 36 linhas), cada uma com parcela integral e reduzida. Não há interpolação nem promessa de aprovação/contemplação. Valores inteiros publicados são apresentados com centavos zero.
+Nove imagens fornecidas pela proprietária em 09/11/2026, conferidas visualmente linha a linha. Os PNGs antigos de outubro na raiz são históricos e não são a fonte das ofertas atuais. As referências no código identificam as imagens pela competência, produto e prazo/faixa, sem inventar nomes de arquivos.
 
-## Instalar no site
-Envie TODOS os arquivos extraídos do pacote completo para a raiz do repositório, substituindo os anteriores. O index.html já contém acesso e simulador incorporado. Abra index.html ou simulador-consorcio.html para testar.
+| Produto | Prazo | Crédito | Administração total | Mensal anunciada | Linhas |
+|---|---:|---|---:|---:|---:|
+| Automóveis | 50 meses | R$ 30 mil–50 mil | 18% | 0,36% | 5 |
+| Automóveis | 72 meses | R$ 40 mil–70 mil | 18% | 0,25% | 7 |
+| Automóveis | 80 meses | R$ 80 mil–140 mil | 16% | 0,2% | 13 |
+| Automóveis | 90 meses | R$ 150 mil–250 mil | 15% | 0,17% | 11 |
+| Imóveis | 200 meses | R$ 50 mil–100 mil | 25% | 0,13% | 6 |
+| Imóveis | 200 meses | R$ 80 mil–140 mil | 25% | 0,13% | 7 |
+| Imóveis | 200 meses | R$ 150 mil–270 mil | 23% | 0,12% | 8 |
+| Imóveis | 200 meses | R$ 300 mil–550 mil | 21% | 0,11% | 11 |
+| Imóveis | 200 meses | R$ 600 mil–1 milhão | 19,5% | 0,1% | 9 |
 
-## Instalar sem substituir sua página atual
-Envie simulador-consorcio.html, simulador.css, simulador.js, tabelas-consorcio.js e config.js. Adicione um link para simulador-consorcio.html no seu menu. Não substitua config.js se seu número foi atualizado; mantenha window.SITE_CONFIG.whatsapp.
+Total: 77 linhas e 154 parcelas transcritas, sem interpolação nem divisão da integral por dois. Todos os valores publicados são inteiros, exibidos com centavos zero. As taxas mensais são as anunciadas nas imagens; não são multiplicadas pelo prazo para substituir as taxas totais.
 
-## Dados e limites
-Fontes: as sete imagens anexadas pela proprietária. Tabelas válidas até 31/10/2026. Os planos de 80 e 90 meses possuem imagens integrais e reduzidas com valores correspondentes. Planos 50/72: redução 25%; 80/90: 50%. Não aplicar percentual diretamente à parcela integral: usar a coluna publicada. Taxas não são adicionadas outra vez.
-O material informa administração total, reserva 2%, prestamista 0,038%, reajuste anual 3% e lance embutido até 30% condicionado à disponibilidade. Não foi inferida periodicidade do seguro, fluxo futuro, valor após contemplação ou total final. Após validade o simulador sinaliza tabela vencida e WhatsApp solicita atualização.
+Todas as imagens: pessoa física, reserva de 2%, seguro prestamista de 0,038%, parcelas reajustadas no aniversário do grupo, validade até 30/11/2026. Não há percentual de reajuste informado nas novas artes. Periodicidade e base do prestamista não estão especificadas: confirmar no regulamento.
 
-## Atualização
-Edite tabelas-consorcio.js com novos valores confirmados e atualize a validade/textos em simulador.js e simulador-consorcio.html. Sem dependências, banco de dados ou conexão com Porto.
+Automóveis: redução anunciada de 50% até a contemplação em todos os prazos, com compensação nas parcelas seguintes. Lance embutido de até 30% do crédito, conforme disponibilidade no grupo.
 
-## Conferência das imagens originais
+Imóveis: cabeçalho anuncia redução de 50%, lance fixo de 40% e lance embutido de 30% do crédito. A coluna reduzida inclui entrada diluída no prazo do grupo; a administração total informa taxa antecipada diluída no plano. As quatro primeiras faixas explicitam compensação posterior da redução. **Ponto para confirmação:** na faixa de R$ 600 mil a R$ 1 milhão, o rodapé não repete a compensação. O site e o WhatsApp pedem confirmação especificamente nesse plano, sem presumir que a regra de outra faixa se aplica. Nenhum lance garante contemplação.
 
-As sete imagens PNG da raiz foram conferidas visualmente: `AUT_18_50m.png`, `AUT_18_50m_PP.png`, `AUT_18_72m.png`, `AUT_16_80m.png`, `-4551.png`, `AUT_15_90m.png` e `6512365.png`. As 36 combinações (5 de 50 meses, 7 de 72, 13 de 80 e 11 de 90), com 72 valores de parcelas integrais/reduzidas, correspondem a `tabelas-consorcio.js`, sem divergências. Administração total de 18%/18%/16%/15%, redução de 25%/25%/50%/50%, reserva de 2%, prestamista de 0,038%, reajuste anual de 3% e validade até 31/10/2026 também correspondem ao material. A conferência comprova a transcrição das imagens, não a disponibilidade comercial atual dos grupos.
+Após 30/11/2026 (America/Sao_Paulo), os simuladores sinalizam tabela vencida e solicitam condições atualizadas no WhatsApp. Isso não renova ofertas automaticamente.
 
-O simulador incorporado usa `ResizeObserver` em `simulador.js` e mensagens de altura recebidas por `app.js` para acompanhar a altura do conteúdo, inclusive quando a tabela detalhada é aberta. Não fixe novamente sua altura em 1450 px: em celulares o conteúdo é mais alto.
+O planejamento familiar mantém juros compostos mensais hipotéticos após a contemplação, limite de 200 meses, inflação anual e todos os avisos de valor bruto, saldo devedor não descontado e ausência de garantias.
 
-## Abrir o pacote no computador
-Extraia todo o ZIP para uma pasta antes de abrir `index.html`. Use o botão laranja **Simular consórcio** no menu, na abertura ou no cartão de consórcio. O simulador está incorporado na seção de mesmo nome; **Abrir simulador completo** abre a versão separada. A altura se ajusta também ao abrir por arquivo local, sem instalar dependências. WhatsApp e autocotação precisam de acesso à Internet.
+## Validação sem instalar dependências
+
+A referência transcrita está em `tests/novembro-2026.json`. Com Python, Playwright e Chromium já disponíveis no ambiente, sirva a raiz com `python -m http.server 8010 --bind 127.0.0.1` e execute `python tests/novembro-2026.py`. O teste percorre todas as linhas e modalidades em 360/390/412/768/1440 px, tabelas detalhadas, condições, mensagens sem enviá-las, planejamento, menus, altura dos iframes e virada da validade no fuso de São Paulo. Não é necessário instalar dependências para usar o site.
+
+A publicação continua pelo workflow `.github/workflows/pages.yml`, acionado por push na main. Arquivos de testes e esta documentação não são publicados.

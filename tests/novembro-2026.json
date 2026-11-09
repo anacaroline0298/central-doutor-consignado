@@ -1,0 +1,536 @@
+{
+  "auto": [
+    {
+      "months": 50,
+      "admin": 18,
+      "monthly": "0,36%",
+      "reduction": 50,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "embeddedBid": 30,
+      "validUntil": "2026-11-30",
+      "sources": [
+        "Imagem de novembro/2026 · automóveis · 50 meses"
+      ],
+      "rows": [
+        {
+          "credit": 30000,
+          "full": 733,
+          "reduced": 373
+        },
+        {
+          "credit": 35000,
+          "full": 855,
+          "reduced": 435
+        },
+        {
+          "credit": 40000,
+          "full": 978,
+          "reduced": 498
+        },
+        {
+          "credit": 45000,
+          "full": 1100,
+          "reduced": 560
+        },
+        {
+          "credit": 50000,
+          "full": 1222,
+          "reduced": 622
+        }
+      ]
+    },
+    {
+      "months": 72,
+      "admin": 18,
+      "monthly": "0,25%",
+      "reduction": 50,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "embeddedBid": 30,
+      "validUntil": "2026-11-30",
+      "sources": [
+        "Imagem de novembro/2026 · automóveis · 72 meses"
+      ],
+      "rows": [
+        {
+          "credit": 40000,
+          "full": 684,
+          "reduced": 351
+        },
+        {
+          "credit": 45000,
+          "full": 770,
+          "reduced": 395
+        },
+        {
+          "credit": 50000,
+          "full": 856,
+          "reduced": 439
+        },
+        {
+          "credit": 55000,
+          "full": 941,
+          "reduced": 483
+        },
+        {
+          "credit": 60000,
+          "full": 1027,
+          "reduced": 527
+        },
+        {
+          "credit": 65000,
+          "full": 1112,
+          "reduced": 571
+        },
+        {
+          "credit": 70000,
+          "full": 1198,
+          "reduced": 615
+        }
+      ]
+    },
+    {
+      "months": 80,
+      "admin": 16,
+      "monthly": "0,2%",
+      "reduction": 50,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "embeddedBid": 30,
+      "validUntil": "2026-11-30",
+      "sources": [
+        "Imagem de novembro/2026 · automóveis · 80 meses"
+      ],
+      "rows": [
+        {
+          "credit": 80000,
+          "full": 1215,
+          "reduced": 625
+        },
+        {
+          "credit": 85000,
+          "full": 1291,
+          "reduced": 664
+        },
+        {
+          "credit": 90000,
+          "full": 1367,
+          "reduced": 704
+        },
+        {
+          "credit": 95000,
+          "full": 1443,
+          "reduced": 743
+        },
+        {
+          "credit": 100000,
+          "full": 1519,
+          "reduced": 782
+        },
+        {
+          "credit": 105000,
+          "full": 1595,
+          "reduced": 821
+        },
+        {
+          "credit": 110000,
+          "full": 1671,
+          "reduced": 860
+        },
+        {
+          "credit": 115000,
+          "full": 1747,
+          "reduced": 899
+        },
+        {
+          "credit": 120000,
+          "full": 1823,
+          "reduced": 938
+        },
+        {
+          "credit": 125000,
+          "full": 1899,
+          "reduced": 977
+        },
+        {
+          "credit": 130000,
+          "full": 1975,
+          "reduced": 1017
+        },
+        {
+          "credit": 135000,
+          "full": 2051,
+          "reduced": 1056
+        },
+        {
+          "credit": 140000,
+          "full": 2127,
+          "reduced": 1095
+        }
+      ]
+    },
+    {
+      "months": 90,
+      "admin": 15,
+      "monthly": "0,17%",
+      "reduction": 50,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "embeddedBid": 30,
+      "validUntil": "2026-11-30",
+      "sources": [
+        "Imagem de novembro/2026 · automóveis · 90 meses"
+      ],
+      "rows": [
+        {
+          "credit": 150000,
+          "full": 2016,
+          "reduced": 1041
+        },
+        {
+          "credit": 160000,
+          "full": 2151,
+          "reduced": 1111
+        },
+        {
+          "credit": 170000,
+          "full": 2285,
+          "reduced": 1180
+        },
+        {
+          "credit": 180000,
+          "full": 2420,
+          "reduced": 1250
+        },
+        {
+          "credit": 190000,
+          "full": 2554,
+          "reduced": 1319
+        },
+        {
+          "credit": 200000,
+          "full": 2688,
+          "reduced": 1388
+        },
+        {
+          "credit": 210000,
+          "full": 2823,
+          "reduced": 1458
+        },
+        {
+          "credit": 220000,
+          "full": 2957,
+          "reduced": 1527
+        },
+        {
+          "credit": 230000,
+          "full": 3092,
+          "reduced": 1597
+        },
+        {
+          "credit": 240000,
+          "full": 3226,
+          "reduced": 1666
+        },
+        {
+          "credit": 250000,
+          "full": 3361,
+          "reduced": 1736
+        }
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "pp",
+      "name": "Primeiros planos",
+      "admin": 25,
+      "monthly": "0,13%",
+      "rows": [
+        [
+          50000,
+          341,
+          182
+        ],
+        [
+          60000,
+          409,
+          219
+        ],
+        [
+          70000,
+          478,
+          256
+        ],
+        [
+          80000,
+          546,
+          292
+        ],
+        [
+          90000,
+          614,
+          329
+        ],
+        [
+          100000,
+          683,
+          365
+        ]
+      ],
+      "months": 200,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "reduction": 50,
+      "fixedBid": 40,
+      "embeddedBid": 30,
+      "compensationConfirmed": true,
+      "validUntil": "2026-11-30",
+      "source": "Imagem de novembro/2026 · imóveis · R$ 50.000 a R$ 100.000"
+    },
+    {
+      "id": "p",
+      "name": "Seu espaço",
+      "admin": 25,
+      "monthly": "0,13%",
+      "rows": [
+        [
+          80000,
+          546,
+          292
+        ],
+        [
+          90000,
+          614,
+          329
+        ],
+        [
+          100000,
+          683,
+          365
+        ],
+        [
+          110000,
+          751,
+          402
+        ],
+        [
+          120000,
+          819,
+          438
+        ],
+        [
+          130000,
+          888,
+          475
+        ],
+        [
+          140000,
+          956,
+          512
+        ]
+      ],
+      "months": 200,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "reduction": 50,
+      "fixedBid": 40,
+      "embeddedBid": 30,
+      "compensationConfirmed": true,
+      "validUntil": "2026-11-30",
+      "source": "Imagem de novembro/2026 · imóveis · R$ 80.000 a R$ 140.000"
+    },
+    {
+      "id": "m",
+      "name": "Novas conquistas",
+      "admin": 23,
+      "monthly": "0,12%",
+      "rows": [
+        [
+          150000,
+          1008,
+          540
+        ],
+        [
+          170000,
+          1143,
+          612
+        ],
+        [
+          190000,
+          1277,
+          684
+        ],
+        [
+          200000,
+          1345,
+          720
+        ],
+        [
+          210000,
+          1412,
+          756
+        ],
+        [
+          230000,
+          1546,
+          828
+        ],
+        [
+          250000,
+          1681,
+          900
+        ],
+        [
+          270000,
+          1815,
+          972
+        ]
+      ],
+      "months": 200,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "reduction": 50,
+      "fixedBid": 40,
+      "embeddedBid": 30,
+      "compensationConfirmed": true,
+      "validUntil": "2026-11-30",
+      "source": "Imagem de novembro/2026 · imóveis · R$ 150.000 a R$ 270.000"
+    },
+    {
+      "id": "g",
+      "name": "Projetos de R$ 300 mil a R$ 550 mil",
+      "admin": 21,
+      "monthly": "0,11%",
+      "rows": [
+        [
+          300000,
+          1985,
+          1062
+        ],
+        [
+          325000,
+          2150,
+          1151
+        ],
+        [
+          350000,
+          2316,
+          1239
+        ],
+        [
+          375000,
+          2481,
+          1328
+        ],
+        [
+          400000,
+          2646,
+          1416
+        ],
+        [
+          425000,
+          2812,
+          1505
+        ],
+        [
+          450000,
+          2977,
+          1594
+        ],
+        [
+          475000,
+          3143,
+          1682
+        ],
+        [
+          500000,
+          3308,
+          1771
+        ],
+        [
+          525000,
+          3474,
+          1859
+        ],
+        [
+          550000,
+          3639,
+          1948
+        ]
+      ],
+      "months": 200,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "reduction": 50,
+      "fixedBid": 40,
+      "embeddedBid": 30,
+      "compensationConfirmed": true,
+      "validUntil": "2026-11-30",
+      "source": "Imagem de novembro/2026 · imóveis · R$ 300.000 a R$ 550.000"
+    },
+    {
+      "id": "gg",
+      "name": "Grandes projetos",
+      "admin": 19.5,
+      "monthly": "0,1%",
+      "rows": [
+        [
+          600000,
+          3922,
+          2099
+        ],
+        [
+          650000,
+          4248,
+          2274
+        ],
+        [
+          700000,
+          4575,
+          2449
+        ],
+        [
+          750000,
+          4902,
+          2624
+        ],
+        [
+          800000,
+          5229,
+          2799
+        ],
+        [
+          850000,
+          5556,
+          2974
+        ],
+        [
+          900000,
+          5883,
+          3149
+        ],
+        [
+          950000,
+          6209,
+          3324
+        ],
+        [
+          1000000,
+          6536,
+          3499
+        ]
+      ],
+      "months": 200,
+      "reserve": 2,
+      "insurance": "0,038%",
+      "reduction": 50,
+      "fixedBid": 40,
+      "embeddedBid": 30,
+      "compensationConfirmed": false,
+      "validUntil": "2026-11-30",
+      "source": "Imagem de novembro/2026 · imóveis · R$ 600.000 a R$ 1.000.000"
+    }
+  ]
+}
