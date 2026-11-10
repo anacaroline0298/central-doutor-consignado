@@ -19,3 +19,10 @@
 
 /* The existing Nunito asset is ExtraBold; use the local regular face for explanations. */
 .conditions .conditions-intro,.conditions .condition-content,.conditions details>p{font-family:SimulatorReading,'Segoe UI',Arial,sans-serif;font-weight:400}
+
+/* Direct home navigation also leaves an embedded simulator via target=_top. */
+.simulator-navigation{margin:0 0 24px}
+.simulator-back{display:inline-flex;align-items:center;justify-content:center;min-height:48px;max-width:100%;padding:12px 16px;border:1px solid #d9a786;border-radius:12px;background:#fff;color:#88320d;font:600 14px/1.5 SimulatorReading,'Segoe UI',Arial,sans-serif;text-align:center;text-decoration:none;overflow-wrap:anywhere}
+.simulator-back:hover{background:#fff0e4;text-decoration:underline;text-underline-offset:3px}
+.simulator-back:focus-visible{outline:3px solid #a9410c;outline-offset:4px}
+@media(max-width:600px){.simulator-navigation{margin-bottom:20px}.simulator-back{width:100%}}
