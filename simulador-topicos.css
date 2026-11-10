@@ -1,0 +1,21 @@
+@font-face{font-family:SimulatorReading;src:url('open-sans-400.woff2') format('woff2');font-weight:300 800;font-display:swap}
+/* Shared, scoped disclosure styles: retain native details/summary keyboard behavior. */
+.conditions .conditions-intro{margin:0 0 20px;color:#657078;font-size:14px;line-height:1.7;font-weight:400}
+.conditions details{margin:12px 0 0;min-width:0;border:1px solid #eeded2;border-radius:14px;background:#fff;overflow-wrap:anywhere}
+.conditions details>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;margin:0;padding:16px 18px;list-style:none;border:0;border-radius:14px;background:#fff8f2;color:#80340f;font-size:15px;font-weight:700;line-height:1.45;cursor:pointer}
+.conditions details>summary::-webkit-details-marker{display:none}
+.conditions details>summary::after{content:'+';display:grid;place-items:center;flex:0 0 24px;width:24px;height:24px;border:1px solid #eacbb6;border-radius:50%;color:#a74313;font:400 20px/1 Nunito,'Segoe UI',sans-serif}
+.conditions details[open]>summary{border-radius:14px 14px 0 0;background:#fff2e7}
+.conditions details[open]>summary::after{content:'−'}
+.conditions details>summary:hover{background:#ffeddf}
+.conditions details>summary:focus-visible{outline:3px solid #b84c16;outline-offset:3px}
+.conditions .condition-content{padding:16px 18px}
+.conditions p,.conditions .condition-content p{font-size:14px;line-height:1.75;font-weight:400;color:#52616b;margin:0 0 14px}
+.conditions .condition-content p:last-child{margin-bottom:0}
+.conditions details>p{margin:16px 18px;font-size:14px;line-height:1.75;font-weight:400}
+.conditions details .scroll,.conditions details .table-scroll{margin:12px 16px;max-width:calc(100% - 32px)}
+.conditions .condition-content dl{margin:0 0 18px}
+@media(max-width:600px){.conditions details>summary{padding:15px 14px;font-size:14px}.conditions .condition-content{padding:16px 14px}.conditions details>p{margin:16px 14px}.conditions .condition-content dl{grid-template-columns:1fr}.conditions details .scroll,.conditions details .table-scroll{margin-inline:12px;max-width:calc(100% - 24px)}}
+
+/* The existing Nunito asset is ExtraBold; use the local regular face for explanations. */
+.conditions .conditions-intro,.conditions .condition-content,.conditions details>p{font-family:SimulatorReading,'Segoe UI',Arial,sans-serif;font-weight:400}
