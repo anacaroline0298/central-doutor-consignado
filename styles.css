@@ -131,7 +131,7 @@ header nav .nav-simulator:after{display:none}
 /* Informational benefit cards: no pointer cursor or simulated link behavior. */
 .benefits.section{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding-block:48px;align-items:stretch}
 .benefits>div{--benefit-bg:#fff0e3;--benefit-accent:#a94311;--benefit-circle:#ffdcc0;min-width:0;position:relative;padding:26px 24px;background:var(--benefit-bg);border:1px solid #c6ad9829;border-radius:22px;box-shadow:0 5px 18px #223c4909;cursor:default;transition:transform .18s ease,box-shadow .18s ease}
-.benefits>div:nth-child(2){--benefit-bg:#eaf3fb;--benefit-accent:#255979;--benefit-circle:#cfe4f4}
+.benefits>div:nth-child(2){--benefit-bg:#edf6f5;--benefit-accent:#286160;--benefit-circle:#cfe9e5}
 .benefits>div:nth-child(3){--benefit-bg:#fff8ec;--benefit-accent:#935414;--benefit-circle:#ffe7bf}
 .benefits>div:nth-child(4){--benefit-bg:#edf6f5;--benefit-accent:#286160;--benefit-circle:#cfe9e5}
 .benefits .line-icon{display:grid;place-items:center;width:48px;height:48px;margin:0 0 20px;border-radius:50%;background:var(--benefit-circle);color:var(--benefit-accent);font:400 27px/1 'Segoe UI Symbol','Segoe UI',sans-serif}
