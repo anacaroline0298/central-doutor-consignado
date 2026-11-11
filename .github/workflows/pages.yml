@@ -30,7 +30,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp index.html styles.css sobre-nos.css app.js config.js \
+          cp index.html sitemap.xml robots.txt styles.css sobre-nos.css app.js config.js \
             simulador-consorcio.html simulador.css simulador-topicos.css simulador.js tabelas-consorcio.js \
             simulador-imoveis.html privacidade.html privacidade.css privacidade.js \
             nunito.ttf open-sans-400.woff2 open-sans-700.woff2 \
