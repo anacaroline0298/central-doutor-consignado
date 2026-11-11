@@ -26,3 +26,5 @@
 .simulator-back:hover{background:#fff0e4;text-decoration:underline;text-underline-offset:3px}
 .simulator-back:focus-visible{outline:3px solid #a9410c;outline-offset:4px}
 @media(max-width:600px){.simulator-navigation{margin-bottom:20px}.simulator-back{width:100%}}
+/* The existing same-page embed detection is shared by both simulators. */
+body[data-privacy-embedded="true"] .simulator-navigation{display:none}
