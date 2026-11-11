@@ -143,3 +143,17 @@ header nav .nav-simulator:after{display:none}
 @media(hover:hover) and (pointer:fine){.benefits>div:hover{transform:translateY(-3px);box-shadow:0 9px 24px #223c4912}}
 .benefits>div:active{box-shadow:0 3px 12px #223c490e}
 @media(prefers-reduced-motion:reduce){.benefits>div{transition:none}.benefits>div:hover{transform:none}}
+
+/* Keep desktop navigation on one line; detailed consortium links remain mobile-only. */
+@media(min-width:851px){
+ #site-menu .nav-consortium-detail{display:none}
+ body>header{gap:20px;padding-inline:clamp(20px,3vw,48px)}
+ body>header>.brand,body>header>.outline{flex-shrink:0}
+ body>header #site-menu{flex:1;justify-content:center;flex-wrap:nowrap;gap:clamp(12px,1.2vw,18px)}
+ body>header #site-menu a{white-space:nowrap;flex-shrink:0}
+}
+@media(min-width:851px) and (max-width:1279px){
+ body>header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 20px}
+ body>header #site-menu{grid-column:1/-1;grid-row:2}
+ body>header>.outline{justify-self:end}
+}
